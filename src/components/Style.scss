@@ -1,0 +1,1699 @@
+@import './Variables.scss';
+
+// NAVIGATION BAR STYLE
+.navSection1{
+    background-color: $backGrey;
+}
+.navnav{
+    width: $contentWidth;
+    margin: 0 auto;
+}
+
+.topNav{
+    width: 100%;
+    padding: 12px 0;
+
+
+    ul{
+        list-style: none;
+        text-align: right;
+    }
+}
+
+.topNavLink{
+    text-decoration: $none;
+    color: $mainColor;
+    margin-left: 25px;
+    font-size: $size-1;
+    align-items: $center;
+    font-stretch: ultra-expanded;
+}
+
+.topNavLink:hover{
+    text-decoration: underline;
+}
+
+.midNav{
+    width: 100%;
+    display: $flex;
+    justify-content: $justify-between;
+    align-items: $center;
+    margin: $size-2 0;
+
+    .logo img{
+        width: 170px;
+    }
+
+    input{
+        width: 800px;
+        height: 40px;
+        border: .5px solid $mainColor;
+        padding: $size-1;
+        font-size: $size-2;
+    }
+    .midNavLink{
+        text-decoration: $none;
+        color: $mainColor;
+        margin-left: 20px;
+        font-size: $size-2;
+    }
+    .midNavLink:hover{
+        text-decoration: underline;
+    }
+}
+
+.backBlue{
+    width: 100%;
+    background-color: $mainColor;
+    padding: 12px 0;
+
+    .blueLinks{
+        width: $contentWidth;
+        margin: 0 auto;
+        align-items: $center;
+    }
+
+    .bnl{
+        align-items: $center;
+        margin-right: 40px;
+        text-decoration: none;
+        font-size: $size-2;
+        color: white;
+    }
+    .bars{
+        font-weight: lighter;
+    }
+}
+
+.LastNav{
+    width: 100%;
+    background-color: $backLight;
+    box-shadow: rgb(0 0 0 / 20%) 0px 1px 2px 0px;
+    padding-bottom: 12px;
+    h5{
+        color: #D32029;
+        padding-left: 70px;
+        font-weight: lighter;
+        align-items: center;
+        font-size: 12px;
+    }
+}
+
+.lastLinks{
+    width: $contentWidth;
+    margin: 0 auto;
+    display: $flex;
+    justify-content: $justify-between;
+    padding-top: 12px;
+
+    .lastflex{
+        display: $flex;
+        gap: 160px;
+    }
+
+    .lastcontent span{
+        font-size: 12px;
+    }
+
+    .lastcontent p{
+        font-size: $size-1;
+        font-weight: bold;
+        line-height: 30px;
+    }
+
+    .lastrightLinks .lrl{
+        color: $mainColor;
+        text-decoration: $none;
+        font-size: $size-2;
+    }
+    .lastrightLinks .lrl:hover{
+        text-decoration: underline;
+    }
+}
+
+
+// BANNER STYLE
+.banner{
+    width: $contentWidth;
+    margin: 20px auto;
+}
+
+.banner img{
+    border-radius: 10px ;
+}
+
+// SHOP PRODUCTS SECTION
+
+.prod-slider {
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slide{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity ease-in-out 0.4s;
+}
+  
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.active-anim{
+    opacity: 1;
+}
+
+.slideHead{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    text-align: center;
+    background-color: #D32029;
+    padding: 10px;
+    color: white;
+}
+
+.bodySlide{
+    position: absolute;
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    bottom: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: white;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.centre{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.bodySlide h4{
+    color: #D32029;
+}
+
+.bodySlide p{
+    color: black;
+}
+  
+.btn-slide {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px 0px 0px 5px;
+    position: absolute;
+    border: none;
+    opacity: 0.6;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.btn-slide:hover{
+    background-color: black;
+    color: white;
+}
+
+.btnLeft{
+    border-radius: 0px 5px 5px 0px;
+}
+
+.btn-slide img{
+    width: 25px;
+    height: 25px;
+    pointer-events: none;
+}
+  
+.prev {
+    top: 50%;
+    left: -10px;
+    transform: translateY(-60%);
+}
+
+.next{
+    top: 50%;
+    right: -10px;
+    transform: translateY(-60%);
+}
+
+.container-dots {
+  width: 100%;
+  bottom: 10px;
+  height: 11px;
+  display: block;
+  position: absolute;
+  text-align: center;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    margin: 0px 4px;
+    position: relative;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: rgba(101, 101, 101, 0.6);
+}
+
+.dot:hover {
+cursor: pointer;
+background-color: rgba(0, 0, 0, 0.8);
+}
+
+.active{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+.Maingridbox{
+    width: $contentWidth;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.gridbox{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.myCard{
+    width: 100%;
+    height: 336px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.myCard img{
+    width: 100%;
+    height: auto;
+    background-color: $backGrey;
+    border-radius: 10px;
+}
+
+
+// SECOND PRODUCT SECTION
+.prd5x8{
+    display: $grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    width: $contentWidth;
+    margin: 70px auto;
+}
+
+.box5x8{
+    width: 100%;
+    display: block;
+    text-align: center;
+    background-color: $backLight;
+    border-radius: 10px;
+    border: 1px solid $backGrey;
+}
+
+.box5x8 h2{
+    background-color: $backGrey;
+    font-size: 28px;
+    color: #333333;
+    padding: 10px;
+    text-align: $center;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.gridddd{
+    display:  $grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.boxCircle{
+    width: 150px;
+    height: auto;
+    margin: 10px;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    p{
+        display: block;
+        margin-top: 7px;
+    }
+}
+.boxCircle:hover{
+    text-decoration: underline;
+}
+
+.grey{
+    width: 140px;
+    height: 135px;
+    background-color: $backGrey;
+    border-radius: 100px;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    transition: all ease-in-out 0.5s;
+}
+
+.grey:hover{
+    background-color: #d7d7d7;
+}
+
+.grey img{
+    width: 130px;
+    display: block;
+    transition: all 0.3s linear;
+}
+
+.grey img:hover{
+    text-decoration: underline;
+    transform: translateY(-10px);
+}
+
+// BANNER SLIDER
+.BannerSlider{
+    width: $contentWidth;
+    margin: 0 auto;
+}
+
+.midBanslider{
+    width: $contentWidth;
+    height: 400px;
+    margin: 0px auto;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    border-radius: 10px;
+    padding: 50px auto;
+}
+
+.midBanslider img{
+    width: 100%;
+}
+
+.btn-Banslide {
+    width: 50px;
+    height: 80px;
+    position: absolute;
+    border: none;
+    opacity: 0.7;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn-Banslide img{
+    color: #d7d7d7;
+}
+
+.Bancontainer-dots {
+    width: 100%;
+    bottom: 10px;
+    height: 11px;
+    // display: block;
+    position: absolute;
+    text-align: center;
+  }
+  
+.Bdot {
+    width: 11px;
+    height: 11px;
+    margin: 0px 4px;
+    position: relative;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: rgba(101, 101, 101, 0.6);
+}
+
+.Bdot:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.active{
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.Apple{
+    width: $contentWidth;
+    margin: 40px auto;
+}
+
+.Apple img{
+    border-radius: 10px;
+}
+
+// GRID PRODUCT 4X2
+.ProdGrid{
+    width: $contentWidth;
+    margin: 0 auto;
+}
+
+.Grid4x4{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.CompBan{
+    width: $contentWidth;
+    margin: 20px auto;
+}
+
+.CompBan img{
+    border-radius: 10px;
+}
+
+.valentine{
+    margin-top: 70px;
+}
+
+.GBcontent{
+    width: $contentWidth;
+    margin: 0 auto;
+    display: $grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    left: 0;
+}
+.GBcon img{
+    width: 685px;
+    height: 230px;
+}
+
+.Last12and4{
+    width: $contentWidth;
+    margin: 0 auto;
+    display: $grid;
+    height: auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.lastProdGrid{
+    display: $grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.kcup{
+    width: $contentWidth;
+    margin: 0 auto;
+}
+
+.kkcup{
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 70px;
+}
+
+.StickerBanner{
+    width: $contentWidth;
+    margin: 0 auto;
+}
+
+.stickerBan{
+    width: 100%;
+    display: $grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.sticker img{
+    width: 450px;
+    height: auto;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+
+.SandM{
+    width: $contentWidth;
+    margin: 0 auto;
+}
+
+.SandMcontent{
+    margin-top: 25px;
+    display: $grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.SnM img{
+    width: 685px;
+    height: 170px;
+    border-radius: 10px;
+}
+
+.Epson{
+    width: $contentWidth;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.Epson img{
+    border-radius: 10px;
+}
+
+.dixieStriShea{
+    width: $contentWidth;
+    margin: 0 auto;
+    display: $grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding-top: 25px;
+}
+
+.DSS{
+    width: 445px;
+    height: auto;
+    align-items: $center;
+    text-align: $center;
+    text-decoration: $none;
+    color: #333333;
+}
+
+.DSS:hover{
+    text-decoration: underline;
+}
+
+.DSS img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.DSS p{
+    font-size: 20px;
+}
+
+.DSS h3{
+    font-size: 20px;
+}
+
+.sixBanner{
+    width: $contentWidth;
+    margin: 0 auto;
+    margin-top: 25px;
+    display: $grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.six img{
+    width: 685px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+// SHOP PAGE STYLING..................................
+.shop{
+    width: $contentWidth;
+    margin: 20px auto;
+}
+
+
+.MainShop{
+    display: $flex;
+}
+
+.ShopNav{
+    width: 25%;
+    margin-top: 25px;
+}
+
+.ShopNav hr{
+    color: #EEEEEE;
+}
+
+.NavHead{
+    display: $flex;
+    justify-content: space-between;
+    align-items: $center;
+    margin-bottom: 5px;
+}
+
+.NavHead h2{
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.NavHead span{
+    font-size: $size-2;
+    color: $mainColor;
+}
+
+.subNavhead{
+    display: $flex;
+    justify-content: space-between;
+    align-items: $center;
+    margin-top: 10px;
+}
+
+.subNavhead h3{
+    font-size: $size-4;
+    font-weight: lighter;
+}
+
+.subNavhead span{
+    font-size: $size-2;
+    color: $mainColor;
+}
+
+.selectCat{
+    margin-top: $size-1;
+    margin-bottom: 10px;
+}
+
+.selectCat span{
+    font-size: $size-2;
+    color: $mainColor;
+}
+
+.selectCat ul{
+    list-style: none;
+    margin-left: $size-3;
+    margin-top: 10px;
+}
+
+.selectCat ul li{
+    height: 30px;
+}
+
+.delivery{
+    margin-top: $size-1;
+}
+
+.delivery h4{
+    font-size: $size-2;
+    font-weight: 100;
+}
+
+.delivery span{
+    font-size: $size-1;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.delivCheck{
+    margin: 15px 0;
+    display: $flex;
+    justify-content: $justify-between;
+}
+
+.subNavPrice{
+    align-items: $center;
+    margin: 10px 0;
+}
+
+.subNavPrice h3{
+    font-size: $size-4;
+    font-weight: lighter;
+    margin-bottom: $size-2;
+}
+
+.navPrice{
+    display: block;
+    height: 40px;
+}
+
+.navPrice span{
+    float: right;
+}
+
+// ........................................
+.shopPage{
+    margin-top: 20px;
+    width: 100%;
+    margin-left: 20px;
+}
+
+.shopPage hr{
+    color: #f8f8f8b8;
+}
+
+.headings{
+    font-weight: 100;
+    margin-bottom: 5px;
+}
+
+.cards{
+    align-items: center;
+    padding: 20px 0;
+    display: block;
+}
+
+.card{
+    width: 100%;
+    display: $flex;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.card hr{
+    display: block;
+}
+
+.cardImg{
+    width: 230px;
+}
+
+.cardImg img{
+    width: 100%;
+}
+
+.CardIcon{
+    display: flex;
+    align-items: $center;
+}
+
+.CardIcon img{
+    width: 20px;
+    height: 20px;
+}
+
+.cardDetails h2{
+    font-size: $size-1;
+    color: $mainColor;
+    font-weight: 100;
+    line-height: 2.5;
+}
+
+.cardDetails p{
+    line-height: 1.7;
+}
+
+.cardDetails span{
+    display: block;
+    line-height: 1.7;
+    align-items: center;
+}
+
+.cardDetails button{
+    margin-top: 15px;
+    padding: 10px 70px;
+    background-color: $mainColor;
+    color: white;
+    border: none;
+    font-size: $size-1;
+}
+
+
+
+// CART PAGE ........................................
+.Cart{
+    width: $contentWidth;
+    margin: 20px auto ;
+}
+
+.itemCont{
+    width: 100%;
+    display: $flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cartHead{
+    align-items: baseline;
+    display: flex;
+    font-weight: 100;
+    h3{
+        color: #333333;
+        font-size: 24px;
+        font-weight: 100;
+        margin-left: 10px;
+    }
+}
+
+.cartpage{
+    width: 100%;
+    margin-top: 20px;
+    display: $flex;
+    justify-content: space-between;
+}
+
+.itemfill{
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cartpic{
+    width: 115px;
+    height: 115px;
+}
+
+.cartdetails{
+    width: 420px;
+    margin-top: 30px;
+    p{
+        color: $mainColor;
+        line-height: 30px;
+        font-size: $size-1;
+    }
+    span{
+        line-height: 30px;
+        font-size: 12px;
+    }
+    h4{
+        line-height: 30px;
+        font-size: $size-2;
+        font-weight: 100;
+    }
+}
+
+.buttons{
+    margin-top: 20px;
+    display: $flex;
+    align-items: $center;
+}
+
+.buttons button{
+    width: 35px;
+    height: 40px;
+    font-size: 35px;
+    font-weight: 100;
+    color: $mainColor;
+    border: .5px solid #333333;
+}
+
+.buttons h3{
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    text-align: $center;
+    border: .5px solid #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.summation{
+   text-align: end;
+   margin-right: 20px;
+   align-items: center;
+    p{
+        color: #333333;
+    }
+    h2{
+        font-size: $size-3;
+    }
+
+}
+
+.orderedList{
+    display: inline-block;
+}
+
+.itemRight{
+    margin-top: 20px;
+    width: 400px;
+}
+
+.cartRightBox1{
+    border: 2px solid rgb(48, 113, 169);
+    box-shadow: rgb(48 113 169) 0px 0px 4px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 370px;
+    h4{
+        font-size: $size-1;
+        line-height: 1.5;
+    }
+    span{
+        font-size: 12px;
+        line-height: 1.5;
+    }
+    h3{
+        font-size: $size-1;
+        color: #008000;
+        line-height: 1.5;
+    }
+}
+
+.cartRightBox2{
+    border: .5px solid #333333;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 370px;
+    h4{
+        font-size: $size-1;
+        font-weight: 100;
+        line-height: 1.5;
+    }
+    span{
+        font-size: 12px;
+        line-height: 1.5;
+    }
+    h3{
+        font-size: $size-1;
+        color: #008000;
+        line-height: 1.5;
+    }
+}
+
+.cartRightBox3{
+    border: .5px solid #333333;
+    border-radius: 5px;
+    padding: 10px;
+    width: 370px;
+    h4{
+        font-size: $size-1;
+        line-height: 1.5;
+        span{
+            font-weight: 100;
+        }
+    }
+    h3{
+        font-size: $size-1;
+        color: $mainColor;
+        font-weight: 100;
+        line-height: 1.5;
+    }
+    h5{
+        font-size: $size-1;
+        font-weight: 100;
+        line-height: 1.5;
+    }
+}
+
+.itemRightside{
+    width: 500px;
+    height: fit-content;
+    margin-top: 20px;
+    border: .5px solid #333333;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: rgb(0 0 0 / 20%) 0px 1px 2px 0px;
+    p{
+        font-size: $size-1;
+        color: #707070;
+        margin-top: 15px;
+    }
+    button{
+        width: 100%;
+        padding: 10px;
+        background-color: #008000;
+        border: $none;
+        margin-top: 10px;
+        color: white;
+        font-size: $size-3;
+    }
+}
+
+.totalInfo{
+    width: 100%;
+    display: $flex;
+    justify-content: $justify-between;
+    line-height: 3;
+    h3{
+        font-size: $size-2;
+        font-weight: 100;
+
+    }
+    span{
+        font-size: $size-1;
+        font-weight: 100;
+    }
+}
+
+.estTotal{
+    width: 100%;
+    display: $flex;
+    justify-content: $justify-between;
+    margin-top: $size-1;
+    h3{
+        font-size: $size-3;
+        font-weight: 100;
+    }
+}
+
+
+
+
+
+// DASHBOARD......................................
+.adminNav{
+    width: 100%;
+}
+
+.topnav{
+    display: $flex;
+    justify-content: $justify-between;
+    width: $contentWidth;
+    margin: 10px auto;
+    align-items: $center;
+    img{
+        width: 200px;
+        height: auto;
+    }
+    input{
+        width: 500px;
+        height: 40px;
+        padding: 5px 10px;
+        font-size: 20px;
+        border: .5px solid $mainColor;
+    }
+    span{
+        font-size: 20px;
+        text-decoration: none;
+        color: $mainColor;
+    }
+}
+
+.mainNav{
+    padding: 15px 0px;
+    background-color: $mainColor;
+    .eighty{
+        width: $contentWidth;
+        margin: 0 auto;
+        display: $flex;
+        justify-content: $justify-between;
+        .links{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+    }
+}
+
+
+// NEW PRODUCT .............................................
+.newProd{
+    width: $contentWidth;
+    margin: 20px auto;
+    h1{
+        font-weight: 100;
+    }
+}
+
+.newUser{
+    width: $contentWidth;
+    margin: 20px auto;
+    h1{
+        font-weight: 100;
+    }
+}
+.form{
+    background: $backLight;
+    background-size: cover;
+    width: 60%;
+    height: auto;
+    margin: 50px auto;
+    margin-bottom: 0;
+    padding: 30px 50px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 4px, rgba(0, 0, 0, 0.07) 0px 2px 8px, rgba(0, 0, 0, 0.07) 0px 4px 16px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.form-group {
+    margin: 20px 0px;
+}
+
+.form-group label{
+    color: $mainColor;
+    font-size: 20px;
+}
+
+.form-group input{
+    width: 100%;
+    display: block;
+    margin-top: 5px;
+    padding: 10px 15px;
+    font-size: 17px;
+    outline: none;
+    background-color: #eee;
+    border: .5px solid $mainColor;
+    border-radius: 5px
+}
+
+.form-group span {
+    font-size: 12px;
+    margin-left: 10px;
+    color: red;
+}
+
+.form-group button{
+    background: $mainColor;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+    display: block;
+    width: 50%;
+    margin: 15px auto;
+    border-radius: 10px;
+}
+
+.form-group button a{
+    text-decoration: none;
+    color: #eee;
+}
+
+.form-group select{
+    width: 100%;
+    display: block;
+    padding: 10px 15px;
+    font-size: 17px;
+    outline: none;
+    background-color: #eee;
+    border: 1px solid #000;
+    border-radius: 5px
+}
+
+
+// SHOP PAGE .................................................
+.Product{
+    width: $contentWidth;
+    margin: 20px auto;
+}
+
+.prodImg{
+    width: 450px;
+}
+
+.MainText{
+    margin-top: 20px;
+    p{
+        font-size: $size-4;
+        color: #333333;
+        display: block;
+        line-height: 35px;
+    }
+    .item{
+        display: block;
+        font-size: 12px;
+        color: #333333;
+        line-height: 35px;
+    }
+    .review{
+        display: block;
+        color: $mainColor;
+        font-size: $size-3;
+        line-height: 35px;
+    }
+    .icon{
+        font-size: $size-4;
+        line-height: 35px;
+        img{
+            width: 25px;
+        }
+    }
+    h4{
+        line-height: 35px;
+        font-size: 25px;
+        font-weight: 100;
+        color: $mainColor;
+    }
+    .shipping{
+        line-height: 35px;
+        color: #707070;
+        font-size: $size-1;
+    }
+    ul{
+        color: #333333;
+        font-size: $size-2;
+        li{
+            margin-left: 20px;
+        }
+    }
+}
+
+.mainProduct{
+    margin: 20px 10px;
+}
+
+.cartBtn{
+    width: 100%;
+    height: 40px;
+    font-size: $size-4;
+    font-weight: 100;
+    color: white;
+    background-color: $mainColor;
+    border: none;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+.Order{
+    .cartOrder{
+        width: 330px;
+        padding: 20px 15px;
+        border: .5px solid #333333;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        h3{
+            font-size: $size-3;
+            color: #333333;
+            line-height: 25px;
+        }
+        h4{
+            font-size: $size-2;
+            color: #008000;
+            line-height: 25px;
+            span{
+                color: #333333;
+                margin-left: 5px;
+                font-weight: 100;
+            }
+        }
+        p{
+            color: #333333;
+            font-size: $size-2;
+            line-height: 25px;
+            margin-bottom: 20px;
+        }
+        button{
+            width: 100%;
+            height: 40px;
+            font-size: $size-4;
+            font-weight: 100;
+            color: white;
+            background-color: $mainColor;
+            border: none;
+            border-radius: 5px;
+        }
+    }
+    .Delivery{
+        width: 330px;
+        padding: 20px 15px;
+        border: 1px solid #d9d9d9;
+        border-radius: 5px;
+        background-color: #FAFAFA;
+        h3{
+            font-size: $size-3;
+            color: #5F5F5F;
+            line-height: 25px;
+        }
+        p{
+            color: #5F5F5F;
+            font-size: $size-2;
+            line-height: 25px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.deleteCartItem{
+    margin-top: 20px;
+    font-size: 25px;
+    color: #D32029;
+}
+
+.ProdDescription{
+    width: 950px;
+    h1{
+        margin: 20px 0px;
+        font-size: $size-4;
+        color: #333333;
+    }
+    h3{
+        font-size: $size-3;
+        color: #333333;
+    }
+
+    .features{
+        margin-top: 20px;
+        ul{
+            margin-top: 15px;
+            margin-left: 20px;
+            line-height: 25px;
+            color: #000000CC;
+        }
+    }
+
+    .notes{
+        margin-top: 20px;
+        ul{
+            margin-top: 15px;
+            margin-left: 20px;
+            line-height: 25px;
+            color: #000000CC;
+        }
+    }
+
+    .ingredients{
+        margin: 25px 0px;
+        span{
+            margin-top: 15px;
+            color: #000000CC;
+            line-height: 25px;
+        }
+    }
+}
+
+.Table{
+    margin: 25px 0px;
+}
+
+.table{
+    width: 100%;
+    color: #333333;
+    border: none;
+    tr{
+        height: 45px;
+    }
+
+    .r1{
+        background-color: #EEEEEE;
+    }
+
+    .r2{
+        background: #FAFAFA;
+    }
+}
+
+.shipping{
+    margin: 25px 0px;
+    span{
+        margin-top: 15px;
+        color: #000000CC;
+        line-height: 35px;
+        p{
+            color: $mainColor;
+        }
+    }
+}
+
+// Footer..............................................
+.Footer{
+    color: #333333;
+    padding-top: 60px;
+    background-color: #EEEEEE;
+}
+
+.footfoot{
+    width: $contentWidth;
+    margin: 0px auto;
+}
+
+.footTop{
+    display: $flex;
+    justify-content: $justify-between;
+    h2{
+        font-size: 20px;
+        font-weight: 100;
+        margin-bottom: 10px;
+    }
+    input{
+        width: 100%;
+        height: 25px;
+        margin-bottom: 20px;
+    }
+}
+
+.footerDown{
+    display: $flex;
+    justify-content: $justify-between;
+    margin: 35px 0px;
+    h2{
+        font-size: 20px;
+        font-weight: 100;
+    }
+    ul{
+        list-style: none;
+        line-height: 25px;
+        color: #5F5F5F;
+        font-size: $size-2;
+    }
+}
+
+.lastfoot{
+    color: #5F5F5F;
+    padding-bottom: 40px;
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        margin: 30px auto;
+    }
+    p{
+        text-align: center;
+        font-size: $size-1;
+    }
+}
+
+
+
+// ADMIN LOGIN .................................................
+.LoginNav{
+    background-color: #EEEEEE;
+    text-align: center;
+    padding: 20px 0;
+    img{
+        width: 150px;
+    }
+}
+
+.hnflbh{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.AdminLogin{
+    width: 35%;
+    margin: 0 auto;
+    h1{
+        font-size: 30px;
+        font-weight: 100;
+    }
+    form{
+        border: .5px solid #333333; 
+        width: 100%;
+        margin: 10px auto;
+        padding: 20px;
+    }
+}
+
+.form-login input{
+    width: 100%;
+    display: block;
+    margin-top: 5px;
+    padding: 10px 15px;
+    font-size: 17px;
+    outline: none;
+    background-color: #eee;
+    border: .5px solid #333333;
+    border-radius: 5px;
+}
+
+.form-login span {
+    font-size: 12px;
+    margin-left: 10px;
+    color: red;
+}
+
+.form .Signbutton{
+    background: $mainColor;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    margin: 15px auto;
+    border-radius: 5px;
+}
+
+.form .forgot{
+    font-size: 12px;
+    margin-top: 10px;
+    margin-left: 20px;
+    color: $mainColor;
+    text-decoration: underline dotted;
+}
+
+.form .check{
+    margin-top: 25px;
+    font-size: $size-3;
+    margin-right: 10px;
+}
+
+.form .privDev{
+    font-size: 12px;
+    margin: 20px 0;
+}
+
+.LoginFooter{
+    background-color: #EEEEEE;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    color: #5F5F5F;
+    font-size: $size-1;
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: $center;
+        li{
+            margin-right: 20px;
+        }
+    }
+    span{
+        display: block;
+        line-height: 3;
+    }
+}
+
+
+// ADMIN PRODUCTS
+.prodContainer{
+    width: $contentWidth;
+    margin: 20px auto;
+}
+
+.prdFlex{
+    display: flex;
+    align-items: $center;
+    padding: 20px;
+    img{
+        width: 220px;
+        height: 230px;
+    }
+}
+
+.prdDetails{
+    margin-left: 50px;
+    h3{
+        color: $mainColor;
+        font-size: $size-4;
+        line-height: 1;
+    }
+    span{
+        color: #5F5F5F;
+        font-size: $size-1;
+    }
+    .prdPrice{
+        margin-top: 10px;
+        font-size: $size-3;
+        line-height: 2;
+    }
+    .prdQty{
+        font-size: $size-2;
+    }
+    .prdDesc{
+        color: #333333;
+        max-width: 600px;
+        line-height: 1.5;
+    }
+    .prdBtns{
+        margin-top: 20px;
+        width: 100%;
+        .editBtn{
+            width: 200px;
+            padding: 5px;
+            background-color: #008000;
+            border: none;
+            border-radius: 5px;
+            color: #EEEEEE;
+            font-size: $size-2;
+            margin-right: 20px;
+        }
+        .delBtn{
+            width: 200px;
+            padding: 5px;
+            background-color: #D32029;
+            border: none;
+            border-radius: 5px;
+            color: #EEEEEE;
+            font-size: $size-2;
+        }
+    }
+}
+
+.userContainer{
+    width: $contentWidth;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px auto;
+    gap: 40px;
+}
+.usersDeet{
+    padding: 25px 0px;
+}
+
+
+
+
+
+// DASHBOARD PAGE ...........................
+.Totals{
+    display: $grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px;
+    margin: 20px auto;
+
+    .TotalBox{
+        width: 350px;
+        height: 200px;
+        color: #EEEEEE;
+        background-color: $mainColor;
+        align-items: center;
+        text-align: center;
+        border-radius: 5px;
+        img{
+            width: 80px;
+        }
+        h2{
+            margin-bottom: 15px;
+
+        }
+        span{
+            text-shadow: 1px 1px 2px black, 0 0 1em #333333, 0 0 0.2em white;
+            font-size: 35px;
+        }
+    }
+}
+
+.DashTable{
+    width: 70%;
+    margin: 20px auto;
+    border-radius: 5px;
+    margin-bottom: 120px;
+}
+
+.headtr{
+    background-color: $mainColor;
+    th{
+        padding: 10px 0px;
+        font-size: 20px;
+        color: #EEEEEE;
+    }
+}
+
+.bodytr{
+    background-color: #EEEEEE;
+    td{
+        padding: 12px;
+        font-size: 16px;
+    }
+}
